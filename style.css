@@ -1,0 +1,79 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: 
+  linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
+  linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+  linear-gradient(315deg, black 25%, transparent 25%),
+  linear-gradient(45deg, black 25%, transparent 25%);	
+  background-size: 2em 2em;
+  background-color: #232323;
+}
+
+.title h1{
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2.9em;
+    color: white;
+}
+
+.container{
+    background: white;
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.container > .header,
+.container > .content,
+.container > .footer{
+    background: white;
+    padding: 20px;
+}
+
+.container .header,
+.container .footer{
+    background-color: gray;
+    color: white;
+    grid-column: 1/4;
+}
+
+.container .header ul{
+    list-style-type: none;
+}
+.container .header li{
+    display: inline;
+    float: left;
+}
+.container .header a{
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}
+.container .header li a:hover {
+    background-color: gray;
+}
+
+.container .content{
+    background-color: white;
+    grid-column: 1/4;
+}
+
+.container .content form{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+}
+
+.container .footer{
+    text-align: center;
+}
